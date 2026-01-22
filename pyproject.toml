@@ -1,0 +1,26 @@
+[project]
+name = "bank-statement-analysis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "LaljiSankhat03",email = "laljis@webelight.co.in"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "fastapi (>=0.128.0,<0.129.0)",
+    "uvicorn (>=0.40.0,<0.41.0)",
+    "pdfplumber (>=0.11.9,<0.12.0)",
+    "python-multipart (>=0.0.21,<0.0.22)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "openai (>=2.14.0,<3.0.0)",
+    "google-genai (>=1.56.0,<2.0.0)",
+    "litellm (>=1.80.11,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "bank_statement_analysis", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
